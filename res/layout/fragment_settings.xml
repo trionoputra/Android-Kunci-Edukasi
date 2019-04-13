@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+     	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+		
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:background="@color/text_abu_muda"
+	        >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:textSize="14dp"
+	            android:textColor="@color/putih"
+	            android:textStyle="bold"
+	            android:text="IMPORTANT" />
+	
+	    </RelativeLayout>
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/list_state"
+		    android:clickable="true"
+	        android:padding="10dp"
+		   		 android:id="@+id/serviceWrapper"
+	         >
+			
+	        <LinearLayout android:layout_height="wrap_content"
+	            			android:layout_width="wrap_content"
+	            			android:layout_centerVertical="true"
+	            			android:orientation="vertical">
+	            			
+	             <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/item"
+			            android:textSize="18dp"
+			            android:text="Enable Service" />
+			        
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/text_abu_muda"
+			            android:textSize="14dp"
+			            android:text="Enable Locker eduation" />
+	            			
+	         </LinearLayout>
+	            
+	       
+	
+	        <CheckBox
+	            android:id="@+id/checkservice"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"/>
+	        
+	    </RelativeLayout>
+	    <View android:layout_height="0.5dp"
+	         android:layout_width="match_parent"
+	         android:background="@color/text_abu_hint"></View>
+		   <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		         android:background="@drawable/list_state"
+		    android:clickable="true"
+		    android:id="@+id/startupWrapper"
+		        android:padding="10dp"
+		         >
+				
+		        <LinearLayout android:layout_height="wrap_content"
+		            			android:layout_width="wrap_content"
+		            			android:layout_centerVertical="true"
+		            			android:orientation="vertical">
+		            			
+		             <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/item"
+				            android:textSize="18dp"
+				            android:text="Startup" />
+				        
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/text_abu_muda"
+				            android:textSize="14dp"
+				            android:text="automatically start when phone startup" />
+		            			
+		         </LinearLayout>
+		            
+		       
+		
+		        <CheckBox
+		            android:id="@+id/checkstartup"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"/>
+		        
+		    </RelativeLayout>
+		    <View android:layout_height="0.5dp"
+	         android:layout_width="match_parent"
+	         android:background="@color/text_abu_hint"></View>
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		         android:background="@drawable/list_state"
+		    android:clickable="true"
+		    android:id="@+id/locksettingWrapper"
+		        android:padding="10dp"
+		         >
+				
+		        <LinearLayout android:layout_height="wrap_content"
+		            			android:layout_width="wrap_content"
+		            			android:layout_centerVertical="true"
+		            			android:orientation="vertical">
+		            			
+		             <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/item"
+				            android:textSize="18dp"
+				            android:text="Lock Setting" />
+				        
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/text_abu_muda"
+				            android:textSize="14dp"
+				            android:text="prevent stop application" />
+		            			
+		         </LinearLayout>
+		            
+		       
+		
+		        <CheckBox
+		            android:id="@+id/checkstop"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"/>
+		        
+		    </RelativeLayout>
+		    <View android:layout_height="0.5dp"
+	         android:layout_width="match_parent"
+	         android:background="@color/text_abu_hint"></View>
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		         android:background="@drawable/list_state"
+		    android:clickable="true"
+		        android:padding="10dp"
+		        android:id="@+id/lockinstallerWrapper"
+		         >
+				
+		        <LinearLayout android:layout_height="wrap_content"
+		            			android:layout_width="wrap_content"
+		            			android:layout_centerVertical="true"
+		            			android:orientation="vertical">
+		            			
+		             <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/item"
+				            android:textSize="18dp"
+				            android:text="Lock Package Installer" />
+				        
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/text_abu_muda"
+				            android:textSize="14dp"
+				            android:text="prevent uninstall application" />
+		            			
+		         </LinearLayout>
+		            
+		       
+		
+		        <CheckBox
+		            android:id="@+id/checkuninstal"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"/>
+		        
+		    </RelativeLayout>
+		     <View android:layout_height="0.5dp"
+	         android:layout_width="match_parent"
+	         android:background="@color/text_abu_hint"></View>
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		         android:background="@drawable/list_state"
+		   		 android:clickable="true"
+		   		 android:id="@+id/settingChangepin"
+		         >
+				
+		        <LinearLayout android:layout_height="wrap_content"
+		            			android:layout_width="wrap_content"
+		            			android:layout_centerVertical="true"
+		            			android:orientation="vertical">
+		            			
+		             <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/item"
+				            android:textSize="18dp"
+				            android:text="Change PIN" />
+				        
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/text_abu_muda"
+				            android:textSize="14dp"
+				            android:text="default PIN 1234" />
+		            			
+		         </LinearLayout>
+		    </RelativeLayout>
+		     <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="25dp"
+	        android:background="@color/text_abu_muda"
+	        >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:textSize="14dp"
+	            android:textColor="@color/putih"
+	            android:textStyle="bold"
+	            android:text="GENERAL" />
+	
+	    </RelativeLayout>
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		         android:background="@drawable/list_state"
+		   		 android:clickable="true"
+		   		 android:id="@+id/settingchangeCategory"
+		         >
+
+		        <Spinner
+		            android:id="@+id/spinner1"
+		            android:layout_width="match_parent"
+		            android:layout_height="70dp"
+		             android:background="@drawable/list_state"
+		            android:spinnerMode="dialog"
+		            />
+		       
+		    </RelativeLayout>
+		    <View android:layout_height="0.5dp"
+	         android:layout_width="match_parent"
+	         android:background="@color/text_abu_hint"></View>
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		         android:background="@drawable/list_state"
+		   		 android:clickable="true"
+		   		 android:id="@+id/settingNumberquestion"
+		         >
+				
+		        <LinearLayout android:layout_height="wrap_content"
+		            			android:layout_width="wrap_content"
+		            			android:layout_centerVertical="true"
+		            			android:orientation="vertical">
+		            			
+		             <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/item"
+				            android:textSize="18dp"
+				            android:text="Number of Questions" />
+				        
+				        <TextView
+				            android:id="@+id/txtnumberofquestion"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/text_abu_muda"
+				            android:textSize="14dp"
+				            android:text="10" />
+		            			
+		         </LinearLayout>
+		    </RelativeLayout>
+		    <View android:layout_height="0.5dp"
+	         android:layout_width="match_parent"
+	         android:background="@color/text_abu_hint"></View>
+	    	<RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		         android:background="@drawable/list_state"
+		   		 android:clickable="true"
+		   		 android:id="@+id/settingNumbergoal"
+		         >
+				
+		        <LinearLayout android:layout_height="wrap_content"
+		            			android:layout_width="wrap_content"
+		            			android:layout_centerVertical="true"
+		            			android:orientation="vertical">
+		            			
+		             <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/item"
+				            android:textSize="18dp"
+				            android:text="Number of Goals" />
+				        
+				        <TextView
+				            android:id="@+id/txtnumberofgoal"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/text_abu_muda"
+				            android:textSize="14dp"
+				            android:text="10" />
+		            			
+		         </LinearLayout>
+		    </RelativeLayout>
+		    <View android:layout_height="0.5dp"
+	         android:layout_width="match_parent"
+	         android:background="@color/text_abu_hint"></View>
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		         android:background="@drawable/list_state"
+		   		 android:clickable="true"
+		   		 android:id="@+id/settingDownload"
+		         >
+				
+		        <LinearLayout android:layout_height="wrap_content"
+		            			android:layout_width="wrap_content"
+		            			android:layout_centerVertical="true"
+		            			android:orientation="vertical">
+		            			
+		             <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/item"
+				            android:textSize="18dp"
+				            android:text="Download question" />
+				        
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:textColor="@color/text_abu_muda"
+				            android:textSize="14dp"
+				            android:text="for offline" />
+		            			
+		         </LinearLayout>
+		    </RelativeLayout>
+	
+	</LinearLayout>
+ </ScrollView>

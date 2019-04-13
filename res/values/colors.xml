@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#03a9f4</color>
+    <color name="bg_light">#B3E5FC</color>
+    <color name="text_abu_muda">#B6B6B6</color>
+     <color name="text_abu_hint">#e8e8e8</color>
+    <color name="text_abu_tua">#727272</color>
+    <color name="item">#212121</color>
+    <color name="putih">#fff</color>
+    <color name="pink">#ff4081</color>
+    <color name="ijo">#00d02c</color>
+    
+    <color name="pink_s">#92254a</color>
+    <color name="putih_transparan">#99ffffff</color>
+    <color name="item_transparan">#11000000</color>
+</resources>

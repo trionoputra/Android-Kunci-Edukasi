@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:background="@color/bg"
+	    android:id="@+id/actionbar"
+	    >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/putih"
+            android:textSize="16dp"
+            android:text="App List" />
+	    
+	</RelativeLayout>
+	
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_below="@+id/actionbar"
+        android:layout_width="match_parent"
+      	android:layout_margin="5dp"
+      	android:layout_above="@+id/buttonWrapper"
+        android:layout_height="match_parent" >
+    </ListView>
+	
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonWrapper"
+        android:background="@color/pink"
+        android:weightSum="2"
+        
+        >
+        
+     
+     <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:textColor="@color/putih"
+        android:background="@drawable/btn_pink_state"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="ADD" />
+     
+     <View android:layout_height="match_parent"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_width="0.5dp"
+         android:background="@color/putih"></View>
+         
+      <Button
+        android:id="@+id/btnCancel"
+         android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:textColor="@color/putih"
+        android:background="@drawable/btn_pink_state"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="CANCEL" />
+      
+        
+    </LinearLayout>
+    
+  
+</RelativeLayout>

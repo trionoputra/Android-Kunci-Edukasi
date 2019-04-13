@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:background="@color/bg"
+	    android:id="@+id/actionbar"
+	    >
+	    
+	</RelativeLayout>
+	  <com.onoy.child.widget.SlidingTabLayout
+           android:id="@+id/pager_title_strip"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="top|left"
+		   android:layout_below="@+id/actionbar" >
+       
+      </com.onoy.child.widget.SlidingTabLayout>
+    <android.support.v4.view.ViewPager
+				        android:id="@+id/pagerSetting"
+				          android:layout_below="@+id/pager_title_strip"
+				        android:layout_width="fill_parent"
+				        android:layout_height="match_parent" >
+				        </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:background="#44000000" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+  
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+     <RelativeLayout
+        android:id="@+id/emptyWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@color/bg_light"
+        android:layout_centerHorizontal="true" >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="Please add apps that you want to lock using question"
+             android:textColor="@color/text_abu_tua"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textSize="16dp" />
+        
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+      	android:layout_margin="5dp"
+      	android:layout_above="@+id/btnAdd"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/putih"
+        android:background="@drawable/btn_pink_state"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="+" />
+
+   
+  
+</RelativeLayout>

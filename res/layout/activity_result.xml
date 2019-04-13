@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="TRUE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_pink_shadow_state"
+        android:text="FINISH"
+        android:textColor="@color/putih"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/result" />
+    
+   
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+         android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_above="@+id/btnNext"
+	        android:layout_marginBottom="10dp"
+	        
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+         android:layout_below="@+id/imageView1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:layout_below="@+id/textView2"
+	        
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="20dp"
+	        android:padding="10dp"
+	        android:background="@drawable/white_layout"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/item"
+	            android:textSize="16sp"
+	            android:text="JAWABAN BENAR" />
+	        
+	         <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/item"
+	            android:textSize="60sp"
+	            android:text="10" />
+	         
+	         
+	          <TextView
+	            android:id="@+id/textView4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/item"
+	            android:textSize="16sp"
+	            android:layout_marginTop="10dp"
+	            android:text="JAWABAN SALAH" />
+	          
+	           <TextView
+	            android:id="@+id/textView5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/item"
+	            android:textSize="60sp"
+	            android:text="0" />
+	           
+	           
+	           <TextView
+	            android:id="@+id/textView6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/item"
+	            android:textSize="16sp"
+	            android:layout_marginTop="10dp"
+	            android:text="HASIL" />
+	          
+	           <TextView
+	            android:id="@+id/textView7"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/ijo"
+	            android:textSize="50sp"
+	            android:text="BERHASIL" />
+	           
+	           <TextView
+	            android:id="@+id/textView8"
+	            android:visibility="gone"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/item"
+	            android:textSize="16sp"
+	            android:gravity="center"
+	            android:layout_marginTop="10dp"
+	            android:text="kamu harus benar 10 untuk bisa berhasil" />
+	        
+	    </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>

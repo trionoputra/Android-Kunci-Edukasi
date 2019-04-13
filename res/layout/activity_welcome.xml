@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="TRUE"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/putih"
+        android:background="@drawable/btn_pink_shadow_state"
+        android:textSize="30sp"
+        android:text="START" />
+   
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/welcome" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/transparent_layout"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:layout_marginTop="30dp"
+             android:layout_marginBottom="30dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/putih"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Yuk.. Selesaikan semua misi pertanyaan ini, supaya kamu bisa lanjut memainkan permainan yang kamu suka" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/putih"
+        android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:gravity="center"
+        android:textSize="18sp"
+        android:text="Jika sudah siap tekan tombol start" />
+
+</RelativeLayout>

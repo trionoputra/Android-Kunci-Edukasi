@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+	
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/putih"
+        android:layout_centerInParent="true"
+         >
+        
+       <RelativeLayout
+        android:id="@+id/titleWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg" >
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:layout_centerInParent="true"
+               android:textSize="18dp"
+               android:text="Download Questions"
+               android:gravity="center"
+               android:textColor="@color/putih" />
+
+   	 </RelativeLayout>
+    
+         
+
+         <ScrollView
+             
+             android:id="@+id/scrollView1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/titleWrapper" >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/putih"
+               
+                 android:orientation="vertical" >
+            
+                 <TextView
+				        android:id="@+id/textView1"
+				        android:layout_width="wrap_content"
+                 		android:layout_height="wrap_content"
+                 		android:textColor="@color/text_abu_tua"
+                 		android:textStyle="bold"
+                 		android:text="download semua pertanyaan sesuai kategori yang dipilih"
+                 		android:layout_gravity="center"
+                 		android:gravity="center"
+                 		android:layout_margin="10dp"
+				         />
+		         <LinearLayout android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal"
+				        android:layout_alignParentBottom="true"
+				        android:id="@+id/buttonWrapper"
+				        android:background="@color/pink"
+				        android:weightSum="2"
+				        
+				        >
+				        
+				     
+				     <Button
+				        android:id="@+id/btnSave"
+				        android:layout_width="match_parent"
+				        android:layout_weight="1"
+				        android:layout_height="50dp"
+				        android:textColor="@color/putih"
+				        android:background="@drawable/btn_pink_state"
+				        android:textSize="20dp"
+				        android:gravity="center"
+				        android:text="DOWNLOAD" />
+				     
+				     <View android:layout_height="match_parent"
+				         android:layout_marginTop="10dp"
+				         android:layout_marginBottom="10dp"
+				         android:layout_width="0.5dp"
+				         android:background="@color/putih"></View>
+				         
+				      <Button
+				        android:id="@+id/btnCancel"
+				         android:layout_width="match_parent"
+				        android:layout_weight="1"
+				        android:layout_height="50dp"
+				        android:textColor="@color/putih"
+				        android:background="@drawable/btn_pink_state"
+				        android:textSize="20dp"
+				        android:gravity="center"
+				        android:text="CANCEL" />
+				      
+				        
+				    </LinearLayout>
+             </LinearLayout>
+         </ScrollView>
+    </RelativeLayout>
+    
+</RelativeLayout>

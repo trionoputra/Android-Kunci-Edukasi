@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="TRUE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_pink_shadow_state"
+        android:text="LANJUT"
+        android:textColor="@color/putih"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/question" />
+    
+    <LinearLayout android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_marginTop="10dp"
+        			android:paddingTop="5dp"
+        			android:paddingBottom="5dp"
+        			android:paddingLeft="10dp"
+        			android:background="@color/pink"
+        			android:layout_alignParentRight="true"
+        			android:layout_below="@+id/imageView1" 
+        			android:paddingRight="10dp"
+        			android:gravity="right"
+        			android:orientation="vertical"
+        			android:id="@+id/countWrapper">
+        			
+		          <TextView
+				        android:id="@+id/textView1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="right"
+				        android:layout_gravity="right"
+				        android:text="Matematika - 1 SD"
+				        android:textColor="@color/putih"
+				        android:textSize="15sp" />
+		          
+		          
+		          <TextView
+				        android:id="@+id/textView3"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="right"
+				         android:layout_gravity="right"
+				        android:text="Petanyaan ke 1/10"
+				        android:textColor="@color/putih"
+				        android:textSize="10sp" />
+        			
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_above="@+id/btnNext"
+	        android:layout_marginBottom="10dp"
+         android:layout_below="@+id/countWrapper" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+             <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Petanyaannya adalah ?"
+        android:textColor="@color/putih"
+        android:textSize="18sp" />
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textView2"
+	        
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="20dp"
+	        android:background="@drawable/white_layout"
+	        android:orientation="vertical" >
+			
+	        <RadioGroup android:id="@+id/Radiopilihan"
+	            	    android:layout_width="wrap_content"
+	            	    android:layout_height="wrap_content"
+	            	    android:orientation="vertical">
+	            	    
+	            <RadioButton
+	            android:id="@+id/pilihanA"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|left"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="10dp"
+	            android:text="A. alalalla"
+	            android:textColor="@color/item"
+	            android:textSize="20sp" />
+	
+	        <RadioButton
+	            android:id="@+id/pilihanB"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|left"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:text="B. alalalla"
+	            android:textColor="@color/item"
+	            android:textSize="20sp" />
+	
+	        <RadioButton
+	            android:id="@+id/pilihanC"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|left"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:text="C. alalalla"
+	            android:textColor="@color/item"
+	            android:textSize="20sp" />
+	
+	        <RadioButton
+	            android:id="@+id/pilihanD"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|left"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginBottom="10dp"
+	            android:text="D. alalalla"
+	            android:textColor="@color/item"
+	            android:textSize="20sp" />
+	        
+	        </RadioGroup>
+	        
+	    </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>
