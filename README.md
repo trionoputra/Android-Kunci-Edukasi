@@ -65,3 +65,6 @@ Halaman hasil gagal adalah halaman yang menampilkan hasil jika gagal menjawab se
 <img src="sukses.png" width="200" alt="Pertanyaan"></img>
 <br/>
 Halaman hasil adalah halaman hasil dan ketika anak berhasil menjawab pertanyaan dengan benar sesuai jumlah yang diinginkan orang tua. maka dia bisa lanjut keaplikasi yang dia inginkan dengan menekan tombol lanjut.
+
+### libs
+* [android-async-http](https://loopj.com/android-async-http/)
